@@ -1,0 +1,24 @@
+/* public/assets/css/main.css */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
