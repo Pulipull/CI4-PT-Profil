@@ -1,10 +1,21 @@
 <?php
-namespace App\Controllers;
+    namespace App\Controllers;
 
-class Home extends BaseController
-{
-    public function index()
+    use App\Models\LayananModel;
+
+    class Home extends BaseController
     {
-        return view('home/index', ['title' => 'Beranda']);
+        public function index()
+        {
+            $layanan = new LayananModel();
+
+            $data = [
+                'title' => 'Beranda',
+                'layanan' => $layanan->findAll()
+            ];
+
+            echo view('layouts/header', $data);
+            echo view('home/index', $data);
+            echo view('layouts/footer');
+        }
     }
-}
