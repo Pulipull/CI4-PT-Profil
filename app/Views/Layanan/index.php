@@ -1,3 +1,5 @@
+<?= $this->extend('layouts/admin/main') ?>
+<?= $this->section('content') ?>
 <!-- views/layanan/index.php -->
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h3><?= $title ?></h3>

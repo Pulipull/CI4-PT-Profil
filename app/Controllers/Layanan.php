@@ -20,9 +20,9 @@ class Layanan extends BaseController
             'layanan' => $this->layanan->findAll()
         ];
 
-        echo view('layouts/header', $data);
-        echo view('layanan/index', $data);
-        echo view('layouts/footer');
+        
+        return view('layanan/index', $data);
+       
     }
 
     public function create()

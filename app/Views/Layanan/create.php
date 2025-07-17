@@ -1,3 +1,6 @@
+<?= $this->extend('layouts/admin/admin') ?>
+<?= $this->section('content') ?>
+
 <h3><?= $title ?></h3>
 <form action="/layanan/store" method="post" class="shadow-sm p-4 bg-white rounded">
     <div class="mb-3">

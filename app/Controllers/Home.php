@@ -7,6 +7,7 @@
     {
         public function index()
         {
+            helper('url');
             $layanan = new LayananModel();
 
             $data = [
@@ -14,8 +15,6 @@
                 'layanan' => $layanan->findAll()
             ];
 
-            echo view('layouts/header', $data);
-            echo view('home/index', $data);
-            echo view('layouts/footer');
+           return view('home/index', $data);
         }
     }

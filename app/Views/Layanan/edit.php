@@ -1,3 +1,6 @@
+<?= $this->extend('layouts/admin/admin') ?>
+<?= $this->section('content') ?>
+
 <h3>Edit Layanan</h3>
 <form action="/layanan/update/<?= $layanan['id'] ?>" method="post">
   <div class="mb-3">
